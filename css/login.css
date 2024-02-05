@@ -1,0 +1,96 @@
+.login-form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+.login__header {
+  color: blue;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.login__header img {
+  width: 400px;
+  padding-top: 50px;
+}
+
+.login__header h1 {
+  color: #497ce3;
+  font-size: 1.2em;
+  padding-bottom: 20px;
+}
+
+.login__input {
+  border: 3px solid #194cb4;
+  border-radius: 8px;
+  color: #333;
+  font-size: 1em;
+  margin-bottom: 15px;
+  max-width: 300px;
+  outline: none;
+  padding: 15px;
+  width: 100%;
+}
+
+.difficulty-buttons {
+  border: 3px solid #194cb4;
+  margin-bottom: 5px; 
+  border-radius: 8px;
+  color: #111ede;
+  font-size: 1em;
+  margin-bottom: 15px;
+  max-width: 300px;
+  outline: none;
+  padding: 15px;
+  width: 100%;
+
+}
+
+.difficulty-button {
+
+  margin-bottom: 5px; 
+  border-radius: 8px;
+  background-color: #b2f0fb;
+  border: 2px solid #757da4;
+  color: #111ede;
+  font-size: 1em;
+  margin-bottom: 15px;
+  max-width: 300px;
+  outline: none;
+  padding: 15px;
+  width: 100%;
+}
+.difficulty-button:disabled {
+  background-color: #e8eeef;
+  border: 2px solid #757da4;
+  color: #859ba1;
+  cursor: auto;
+}
+
+@media screen and (max-width:520px) {
+  .login-form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    margin-top: 100px;
+  }
+}
+
+@media screen and (min-width: 521px) and (max-width: 920px) {
+  .login-form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: center;
+    margin-top: 200px;
+  }
+}
