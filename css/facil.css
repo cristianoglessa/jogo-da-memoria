@@ -26,9 +26,9 @@ main {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     gap: 15px;
-    width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
+    width: 90%;
+    max-width:1000px;
+    margin:0px;
   }
   
   .card {
@@ -69,29 +69,10 @@ main {
     filter: saturate(0);
     opacity: 0.5;
   }
-  
-  @media screen and (max-width:920px) {
-    .grid {
-      grid-template-columns: repeat(6, 1fr);
-        
-    }
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: rgba(187, 211, 235, 0.8);
-        font-size: 1.1em;
-        width: 90%;
-        max-width: auto;
-        padding: 20px;
-        margin: 30px;
-        border-radius: 5px;
-      }
-  }
 
   .reset{
     padding: 15px 20px;
-    width: 100%;
+    width: 40%;
     border-radius: 6px;
     color: black;
     background-color: aliceblue;
@@ -101,14 +82,67 @@ main {
     text-transform: uppercase;
     cursor: pointer;
     font-weight: 600;
+    margin-top: 20px;
 }
 
 .reset:focus{
     color: aquamarine;
     background-color: blueviolet;
 }
+  
+@media screen and (min-width: 579px) and (max-width: 920px) {
+    
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgba(187, 211, 235, 0.8);
+        font-size: 1.1em;
+        width: 100%;
+        max-width: auto;
+        padding: 20px;
+        margin: 30px;
+        border-radius: 5px;
+      }
 
+  .reset{
+    padding: 15px 20px;
+    width: 50%;
+    border-radius: 6px;
+    color: black;
+    background-color: aliceblue;
+    border: none;
+    font-size: 1.5em;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 30px;
+}
+.grid {
+  grid-template-columns: repeat(6, 1fr);
+ 
+  
+    
+}
+
+}
   @media screen and (max-width:578px) {
+          
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(12, 115, 218);
+        font-size: 0.7rem;
+        width: 95%;
+        max-width: auto;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+    }
+  
+
     .grid {
       grid-template-columns: repeat(4, 1fr);
       max-width: 60%;
@@ -128,25 +162,5 @@ main {
         text-transform: uppercase;
         cursor: pointer;
         font-weight: 600;
-    }
-    
-    .reset:focus{
-        color: aquamarine;
-        background-color: blueviolet;
-    }
-      
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: rgb(12, 115, 218);
-        font-size: 0.7rem;
-        width: 95%;
-        max-width: auto;
-        padding: 10px;
-        margin: 10px;
-        border-radius: 5px;
-    }
-    
-    
+    }   
   }

@@ -15,10 +15,10 @@ main {
     justify-content: space-between;
     background-color: rgba(187, 211, 235, 0.8);
     font-size: 1.1em;
-    width: 90%;
+    width: 80%;
     max-width: auto;
-    padding: 30px;
-    margin: 30px;
+    padding: 10px;
+    margin: 20px;
     border-radius: 5px;
   }
   
@@ -69,47 +69,95 @@ main {
     filter: saturate(0);
     opacity: 0.5;
   }
+
+  .reset{
+    padding: 15px 20px;
+    width: 40%;
+    border-radius: 6px;
+    color: black;
+    background-color: aliceblue;
+    border: none;
+    font-size: 1.5em;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.reset:focus{
+    color: aquamarine;
+    background-color: blueviolet;
+}
   
- @media screen and (min-width: 441px) and (max-width: 734px) {
+ @media screen and (min-width: 441px) and (max-width: 834px) {
+    header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(92, 171, 249, 0.8);
+    font-size: 0.6em;
+    width: 90%;
+    max-width: auto;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 5px;
+    }
+    
     .grid {
       grid-template-columns: repeat(10, 1fr);
       max-width: 80%;
-      max-width: 80%;
-        
+      max-width: 80%;   
     }
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: rgba(92, 171, 249, 0.8);
-        font-size: 0.6em;
-        width: 90%;
-        max-width: auto;
-        padding: 20px;
-        margin: 30px;
-        border-radius: 5px;
-      }
+    .reset{
+      padding: 15px 20px;
+      width: 40%;
+      border-radius: 6px;
+      color: black;
+      background-color: aliceblue;
+      border: none;
+      font-size: 1.5em;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-weight: 600;
+      margin-top: 20px;
+    }
+    
   }
 
   @media screen and (max-width:440px) {
-    .grid {
-        grid-template-columns: repeat(7, 1fr);
-        padding: 10px 10px 10px 10px; 
-        max-width: 75%;
-        max-height: 90%;
-        
-    }
+    
     header {
         display: flex;
         align-items: center;
         justify-content: space-between;
         background-color: rgb(12, 115, 218);
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         width: 90%;
         max-width: auto;
-        padding: 20px;
+        padding: 15px;
         margin: 10px;
         border-radius: 5px;
-    }    
+    }  
+    .grid {
+      grid-template-columns: repeat(7, 1fr);
+      padding: 10px 10px 10px 10px; 
+      max-width: 85%;
+      
+    }  
+    .reset{
+      padding: 15px 8px;
+      width: 48%;
+      border-radius: 6px;
+      color: black;
+      background-color: aliceblue;
+      border: none;
+      font-size: 1em;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-weight: 600;
+      margin-top: 20px;
+    }
     
   }
